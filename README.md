@@ -133,8 +133,12 @@ print("Last:", lst[-1])
 The 1st line consists of the list named "lst", which will be referenced throughout the rest of the code. The rest of the code is divided into three parts for each of the variables being asked. 
 <br>
 <br>
+*# First*
+<br>
 The first part prints the text "First:" and the first element (index = 0) of the list. 
 <br>
+<br>
+*# Middle*
 <br>
 In the second part, to print all the elements in between the first and last in the list, the first step taken is to get the number of elements in the list. The syntax used for this is "len(list_name)". The value taken from this was stored in the "lst_num" variable. After that, a new list with no elements, "middle", was declared. An index variable, "i", with the value of 1, was also initialized. The next three lines consist of a while loop statement:
 
@@ -148,9 +152,10 @@ Wherein:
 * The first statement inside the loop is an append syntax, "list_name.append(item)", in which the list being appended is the empty list and the items being appended are the elements from the reference list, according to the index variable.
 * The second statement increases the index variable by one
 
-<br>
 After the loop, the last line for the second part prints the text "Middle:" and the entire "middle" list. 
-
+<br>
+<br>
+*# Last*
 <br>
 Lastly, the last part prints the text "Last:" and the last element (index = -1) of the list. 
 <br>
