@@ -24,7 +24,7 @@ First, the function was declared using the syntax:
 def function_name(arguments/inputs)
 ```
 
-The function was named "alphabet_soup" and the input variable was named "word." Inside the function, a variable, "character", was declared, which converts the variable, "word", into a list, which will make the individual letters into elements. Next, the ".sort()" syntax was used on the "character" variable to sort the elements. A "result" variable was declared, which contains a string, and using the ".join()" syntax, the sorted elements of the "character" list will be joined with the empty string. Lastly, the last statement in the function will print the result.
+The function was named "alphabet_soup" and the input variable was named "word." Inside the function, a variable, "character", was declared, which converts the variable, "word", into a list, which will make the individual letters into elements. Next, the ".sort()" syntax was used on the "character" variable to sort the elements. A "result" variable was declared, which contains a string, and using the ".join()" syntax, the sorted elements of the "character" list will be joined with the empty string. Lastly, the last line in the function will print the result.
 
 <br> **Testing**
 ```
@@ -69,7 +69,7 @@ First, the function was declared using the syntax:
 ```
 def function_name(arguments/inputs)
 ```
-The function was named "emotify" and the input variable was named "phrase." Inside the function, there is a series of if and elif statements following the corresponding emoticon conversion shown earlier. Each statement follows this syntax:
+The function was named "emotify" and the input variable was named "phrase". Inside the function, there is a series of if and elif statements following the corresponding emoticon conversion shown earlier. Each statement follows this syntax:
 ```
 # If statement
 if <Word> in <input_variable>
@@ -79,10 +79,13 @@ elif <Word> in <input variable>
     var = input_variable.replace("<Word>", "<Emoticon>")
 ```
 Wherein:
-* "var" is the variable used to store the replace syntax, in this case, the variable is "r".
+* "var" is the variable used to store the replace syntax; in this case, the variable is "r".
 * The input_variable is "phrase".
 * <Word> refers to the words to replace.
 * <Emoticon> refers to the emoticon that will replace the word.
+
+<br>
+The else condition consists of a pass statement if none of the previous conditions were satisfied. Lastly, the last line in the function will print the updated phrase.
 
 
 
@@ -116,7 +119,7 @@ print("First:", lst[0])
 
 # Middle
 lst_num = len(lst) # number of elements in list
-middle = [] # empty set
+middle = [] # empty list
 i = 1 # increment
 while i < lst_num - 1:
     middle.append(lst[i])
@@ -126,6 +129,29 @@ print("Middle:", middle)
 # Last
 print("Last:", lst[-1])
 ```
+
+The 1st line consists of the list named "lst", which will be referenced throughout the rest of the code. The rest of the code is divided into three parts for each of the variables being asked. 
+<br>
+<br>
+The first part prints the text "First:" and the first element (index = 0) of the list. 
+<br>
+<br>
+In the second part, to print all the elements in between the first and last in the list, the first step taken is to get the number of elements in the list. The syntax used for this is "len(list_name)". The value taken from this was stored in the "lst_num" variable. After that, a new list with no elements, "middle", was declared. An index variable, "i", with the value of 1, was also initialized. The next three lines consist of a while loop statement:
+
+```
+while i < lst_num - 1:
+    middle.append(lst[i])
+    i += 1
+```
+Wherein:
+* The while loop's condition to continue looping is while the index variable is less than the number of elements minus one (to ensure that the last element won't be included).
+* The first statement inside the loop is an append syntax, "list_name.append(item)", in which the list being appended is the empty list and the items being appended are the elements from the reference list, according to the index variable.
+* The second statement increases the index variable by one
+
+<br>
+Lastly, the last part prints the text "Last:" and the last element (index = -1) of the list. 
+<br>
+<br>
 
 **Results**
 ```
