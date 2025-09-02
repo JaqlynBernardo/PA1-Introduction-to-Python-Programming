@@ -149,6 +149,9 @@ Wherein:
 * The second statement increases the index variable by one
 
 <br>
+After the loop, the last line for the second part prints the text "Middle:" and the entire "middle" list. 
+
+<br>
 Lastly, the last part prints the text "Last:" and the last element (index = -1) of the list. 
 <br>
 <br>
