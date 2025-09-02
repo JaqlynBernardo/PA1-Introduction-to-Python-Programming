@@ -19,7 +19,13 @@ def alphabet_soup(word):
     print(result)
 ```
 
-**Testing**
+First, I followed the syntax for making a user-defined function: 
+```
+def function_name(arguments/inputs)
+```
+I named the function alphabet_soup and the input variable as word. Inside the function, I declared a variable, "character", which converts the variable, "word", into a list. Next, I use the sort syntax on the "character" variable. I then declared a "result" variable which will contain a string, and using the .join syntax, the sorted characters will be inputed as a string. Lastly, the last statement in the function will print the result.
+
+<br> **Testing**
 ```
 alphabet_soup("hello")
 alphabet_soup("hacker")
@@ -72,6 +78,8 @@ I am >:(
 Why are you :((?
 You made me :D
 ```
+
+
 
 ### Problem #3: Unpacking List Problem
 Unpack the list writeyourcodehere into three variables, being first, middle, and last, with middle being everything in between the first and last element. Then print all three variables.
