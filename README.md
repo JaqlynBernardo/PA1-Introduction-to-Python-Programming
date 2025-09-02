@@ -19,11 +19,12 @@ def alphabet_soup(word):
     print(result)
 ```
 
-First, I followed the syntax for making a user-defined function: 
+First, the function was declared using the syntax:
 ```
 def function_name(arguments/inputs)
 ```
-I named the function alphabet_soup and the input variable as word. Inside the function, I declared a variable, "character", which converts the variable, "word", into a list. Next, I use the sort syntax on the "character" variable. I then declared a "result" variable which will contain a string, and using the .join syntax, the sorted characters will be inputed as a string. Lastly, the last statement in the function will print the result.
+
+The function was named "alphabet_soup" and the input variable was named "word." Inside the function, a variable, "character", was declared, which converts the variable, "word", into a list, which will make the individual letters into elements. Next, the ".sort()" syntax was used on the "character" variable to sort the elements. A "result" variable was declared, which contains a string, and using the ".join()" syntax, the sorted elements of the "character" list will be joined with the empty string. Lastly, the last statement in the function will print the result.
 
 <br> **Testing**
 ```
@@ -40,7 +41,7 @@ abcdeeefghhijklmnoooopqrrsttuuvwxyz
 
 ### Problem #2: Emoticon Problem
 Create a function that changes specific words into emoticons. Given a sentence
-as a string, replace the words smile, grin, sad and mad with their corresponding emoticon.
+as a string, replace the words smile, grin, sad, and mad with their corresponding emoticon.
 | Word | Emoticon |
 | --- | --- |
 | Smile | :) |
@@ -64,7 +65,29 @@ def emotify(phrase):
     print(r)
 ```
 
-**Testing**
+First, the function was declared using the syntax:
+```
+def function_name(arguments/inputs)
+```
+The function was named "emotify" and the input variable was named "phrase." Inside the function, there is a series of if and elif statements following the corresponding emoticon conversion shown earlier. Each statement follows this syntax:
+```
+# If statement
+if <Word> in <input_variable>
+    var = input_variable.replace("<Word>", "<Emoticon>")
+# Elif statement
+elif <Word> in <input variable>
+    var = input_variable.replace("<Word>", "<Emoticon>")
+```
+Wherein:
+* "var" is the variable used to store the replace syntax, in this case, the variable is "r".
+* The input_variable is "phrase".
+* <Word> refers to the words to replace.
+* <Emoticon> refers to the emoticon that will replace the word.
+
+
+
+
+<br> **Testing**
 ```
 emotify("Make me smile")
 emotify("I am mad")
